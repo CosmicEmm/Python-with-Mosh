@@ -48,3 +48,34 @@ quit - to exit
     else:
         print("I don't understand that...")
 
+
+#For Loop: used to iterate over items of a collection
+for item in range(5, 10, 2):
+    print(item)
+#Calculate the total cost of all the items in our shopping cart
+prices = [10, 20, 30, 40]
+total = 0
+for price in prices:
+    total += price #in each iteration, we get the current price and add it to the total
+print(f"Total: {total}")
+
+#Nested Loop: add one loop inside another loop
+for x in range(4):
+    for y in range(3):
+        print(f"({x}, {y})")
+
+#CHALLENGE
+numbers = [5, 2, 5, 2, 2]
+for x_count in numbers:
+    output = ""
+    for count in range(x_count):
+        output += "x"
+    print(output)
+print("\n")
+#Modify the numbers in the list to print L on the terminal
+numbers = [2, 2, 2, 2, 5]
+for x_count in numbers:
+    output = ""
+    for count in range(x_count):
+        output += "x"
+    print(output)
