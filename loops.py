@@ -20,6 +20,16 @@ while guess_count < 3:
 else:
     print("Sorry, you failed!")
 
+#Guessing the number without any limit on the guess count
+number = 9
+while True:
+    guess = int(input("Guess: "))
+    if guess != number:
+        print("Sorry, guess again.")
+    else:
+        print("Bingo!")
+        break
+
 #CAR GAME
 started = False
 while True:
