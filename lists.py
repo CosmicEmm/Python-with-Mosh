@@ -41,8 +41,58 @@ for row in matrix:
     for item in row:
         print(item)
 
+#List Methods: operations that we can perform on a list
+#Append Method: adds an item to the end of the list
+num = [5,2,1,7,4,5]
+num.append(20)
+print(num)
+#Insert Method: insert an item anywhere in the list
+num.insert(2, "Three")
+print(num)
+#Remove Method: removes the first occurrence of an item from the list
+num.remove(5)
+print(num)
+#Pop Method: removes the last item in a list
+num.pop()
+print(num)
+#Index Method: checks the existence of an item in a list and returns the index of its first occurrence
+print(num.index(7))
+#Alternate Method: use in Operator
+print(9 in num)
+print("Three" in num)
+#Clear Method: clears the entire list
+num.clear()
+print(num)
+#Count Method: counts the number of occurrences of an item within a list
+marks = [2,4,7,5,7,2,6,3,7]
+print(marks.count(7))
+#Sort Method: sorts all the items in the list in ascending order
+marks.sort()
+print(marks)
+#Reverse Method: reverses the order of the list
+marks.reverse()
+print(marks)
+#Copy Method: makes a copy of a list. The copy is independent and doesn't get affected by any changes in the original
+marks2 = marks.copy()
+marks.append("100")
+print(f"Original List : {marks}")
+print(f"Copy: {marks2}") #doesn't get affected after appending 100 to the original
 
+#EXERCISE: Write a program to remove the duplicates in a list.
+#Method 1:
+numbers = [2, 2, 4, 6, 2, 3, 4, 6, 1]
+uniques = []
+for number in numbers:
+    if number not in uniques:
+        uniques.append(number)
+print(uniques)
 
+#Method 2:
+numbers = [2, 2, 4, 6, 2, 3, 4, 6, 1]
+for number in numbers:
+    if numbers.count(number) > 1:
+        numbers.remove(number)
+print(numbers)
 
 
 
