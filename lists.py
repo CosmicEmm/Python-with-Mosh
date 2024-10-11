@@ -14,10 +14,10 @@ print(names)
 
 #EXERCISE: Write a program to find the largest number in a list.
 numbers = [24, 60, 144, 89, 11, 137]
-max = numbers[0]
+maximum = numbers[0]
 for number in numbers:
-    if number > max:
-        max = number
+    if number > maximum:
+        maximum = number
 
 print(max)
 
