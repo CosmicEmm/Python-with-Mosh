@@ -35,12 +35,21 @@ print(customer["name"])
 customer["birth_year"] = 1996
 print(customer)
 
-#EXERCISE: 
-numbers = {
+#EXERCISE: Write a program that asks the user to input their number in digits, and then it translates those digits into words.
+digits_mapping = {
+    "0" : "Zero",
     "1" : "One",
     "2" : "Two",
     "3" : "Three",
-    "4" : "Four"
+    "4" : "Four",
+    "5" : "Five",
+    "6" : "Six",
+    "7" : "Seven",
+    "8" : "Eight",
+    "9" : "Nine"
 }
-phone = input("Phone: ")
-print(numbers[phone[0]] + " " + numbers[phone[1]] + " " + numbers[phone[2]] + " " + numbers[phone[3]])
+phone_number = input("Phone: ")
+output = ""
+for character in phone_number:
+    output += digits_mapping.get(character, "!") + " "
+print(output)
