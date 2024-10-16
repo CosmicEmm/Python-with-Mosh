@@ -53,3 +53,22 @@ output = ""
 for character in phone_number:
     output += digits_mapping.get(character, "!") + " "
 print(output)
+
+#Split Method: splits the string on the basis of a separator and returns a list.
+tagline = "Veni Vidi Vici"
+words = tagline.split(" ")
+print(words)
+
+#Emoji Converter: another application of dictionaries
+message = input(">")
+words = message.split(" ")
+emojis = {
+    "book" : "📕",
+    ":)" : "😊",
+    ":(" : "😔",
+    "chess" : "♟️"
+}
+output = ""
+for word in words:
+    output += emojis.get(word, word) + " "
+print(output)
