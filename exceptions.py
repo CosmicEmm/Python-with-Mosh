@@ -18,10 +18,20 @@ try:
     age = int(input("Age: "))
     income = 20000
     risk = income/age
+    print(risk)
     print(age)
 except ValueError:
     print("Invalid value")
 except ZeroDivisionError: #we cannot divide a number by 0
     print("Age cannot be zero")
+
+try:
+    birth_year = int(input("Birth year: "))
+    age = 2024 - birth_year
+    print("Age: " + str(age))
+except ValueError:
+    print("Invalid value")
+except TypeError:
+    print("Can't concatenate int to str")
 
 
