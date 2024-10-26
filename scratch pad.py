@@ -1,6 +1,9 @@
-weight = float(input("Weight: "))
-unit = input("(K)g or (L)bs: ")
-if unit.upper() == "K":
-    print("Weight in lbs: " + str(weight / 0.45))
-else:
-    print("Weight in kg: " + str(weight * 0.45))
+i = 1 # i is the loop variable
+while i <= 5:
+    print(i)
+    i += 1
+
+i = 1
+while i <= 10:
+    print(i * "P")
+    i += 1
