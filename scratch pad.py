@@ -1,3 +1,13 @@
-names = ["John", "Bob", "Mosh", "Sam", "Mary"]
-# we want to print John, Bob and Mosh
-print(names[0:3])
+text = "    Hello    "
+print(text.strip())
+
+n = int(input().strip())
+
+if n % 2 != 0:
+    print("Weird")
+elif n % 2 == 0 and 1 < n < 6:
+    print("Not Weird")
+elif n % 2 == 0 and 5 < n < 21:
+    print("Weird")
+else:
+    print("Not Weird")
