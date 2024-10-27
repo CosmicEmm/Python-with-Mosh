@@ -1,9 +1,3 @@
-i = 1 # i is the loop variable
-while i <= 5:
-    print(i)
-    i += 1
-
-i = 1
-while i <= 10:
-    print(i * "P")
-    i += 1
+names = ["John", "Bob", "Mosh", "Sam", "Mary"]
+# we want to print John, Bob and Mosh
+print(names[0:3])
