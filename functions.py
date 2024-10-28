@@ -42,3 +42,8 @@ def emoji_converter(message):
 message = input(">")
 print(emoji_converter(message))
 
+import utils
+print(utils.find_max([10,6,25,8,13]))
+
+
+
