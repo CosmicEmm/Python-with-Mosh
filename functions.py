@@ -43,7 +43,10 @@ message = input(">")
 print(emoji_converter(message))
 
 import utils
-print(utils.find_max([10,6,25,8,13]))
-
+numbers = [10,3,26,2]
+maximum = utils.find_max(numbers)
+print(maximum)
+#there's also an inbuilt function called max in Python which returns the highest value from an array
+print(max(numbers))
 
 

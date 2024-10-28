@@ -46,3 +46,38 @@ maria.reader()
 maria.add_hobby("Window-shopping")
 print(maria.hobbies)
 print(f"{emm.name} and {maria.name} are friends.")
+
+#Inheritance:
+class Mammal:
+    def walk(self):
+        print("walk")
+
+
+class Dog(Mammal):# the Dog class will inherit all the methods defined in the Mammal class
+    def bark(self):
+        print(5 * "woof! ")
+
+class Cat(Mammal):
+    pass
+
+
+dog1 = Dog()
+dog1.bark()
+cat1 = Cat()
+cat1.walk()
+
+import wunderkammern
+#the module wunderkammern is an object which means we can access its members using the dot operator
+wunderkammern.activate()
+
+podcasts = wunderkammern.Podcasts()
+podcasts.topics()
+podcasts.hosts()
+
+#we can also import specific classes or functions instead of the entire module
+from wunderkammern import CommonplaceBook
+c_book = CommonplaceBook() #here we don't need to prefix the class name with the module name
+c_book.insights()
+aot = c_book.anime()
+print(aot)
+
