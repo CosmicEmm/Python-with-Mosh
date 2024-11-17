@@ -1,2 +1,1 @@
-z = complex(1, 3)
-print(z)
+print(1 > 5)
