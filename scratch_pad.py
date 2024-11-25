@@ -1,13 +1,11 @@
-def name():
-    boy = 'ali'
-    print(boy)
-    def gender():
-        sex = 'male'
-        def age():
-            a = 24
-            print(f'{boy} is naughty')
-        age()
-    gender()
+def outer():
+    coin = "Head"
+    def inner():
+        nonlocal coin
+        coin = "Tail"
+        print(f'Inner: {coin}')
+    inner()
+    print(f'Outer: {coin}')
 
-name()
 
+outer()
