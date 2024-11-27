@@ -1,11 +1,15 @@
-def outer():
-    coin = "Head"
-    def inner():
-        nonlocal coin
-        coin = "Tail"
-        print(f'Inner: {coin}')
-    inner()
-    print(f'Outer: {coin}')
+def multiply_numbers(a=5, b=6):
+    """
+    Multiplies two numbers and returns the result.
+
+    Args:
+        a (int): The first number.
+        b (int): The second number.
+
+    Returns:
+	    int: The product of a and b.
+    """
+    return a * b
 
 
-outer()
+print(multiply_numbers())
