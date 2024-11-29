@@ -1,2 +1,7 @@
-numbers = {1, 2, 2, 3, 4, 1, 'm', 5, 'a'}
-numbers.
+car_specs = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "year": 2020
+}
+print(car_specs)
