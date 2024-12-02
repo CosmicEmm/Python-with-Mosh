@@ -1,7 +1,9 @@
-numbers = [10, 5, 8, 20, 3, 15]
-maximum = numbers[0]
-for num in numbers[1:]:
-  if num > maximum:
-    maximum = num
+def factorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
 
-print(f'Largest Number: {maximum}')
+
+print(factorial(3))
+
