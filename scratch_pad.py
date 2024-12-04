@@ -3,3 +3,5 @@ countries = {'GER':'Germany', 'FRA':'France', 'ENG':'England'}
 print(2 not in numbers)
 print(6 not in numbers)
 print('ENG' not in countries)
+print(10 - 3)
+print(10 * 3)
