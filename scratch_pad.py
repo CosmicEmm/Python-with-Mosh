@@ -1,2 +1,7 @@
-values = [1, 2, 2, 3, 4, 1, 'm', 5, 'a']
-print(values.index(5))
+message = 'Hello'
+letter = 'O'
+
+message += ' World!'
+letter *= 10
+print(message)
+print(letter)
