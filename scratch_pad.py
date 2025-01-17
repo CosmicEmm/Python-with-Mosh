@@ -1,7 +1,8 @@
-print(hash(frozenset({4, 5, 6})))
-print(hash(500))
-print(hash(100+50+150+200))
+class Emm:
+    def __hash__(self):
+        return 1
 
-
-
-
+emm = Emm()
+print(hash(emm))
+css = Emm()
+print(hash(emm))
