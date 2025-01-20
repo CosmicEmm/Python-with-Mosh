@@ -1,4 +1,4 @@
-course = "Welcome to Disneyland"
+course = "Welcome to Devland"
 print(course.upper())
 print(course.lower())
 print(course.find("D"))
