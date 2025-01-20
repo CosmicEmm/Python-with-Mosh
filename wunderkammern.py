@@ -4,7 +4,7 @@ def activate():
 
 class Wunderkammern:
     def topics(self):
-        print("Learning, Life, Tech, Science, Productivity")
+        print("Learning, Life, Technology, Science, Productivity")
 
 
 class CommonplaceBook(Wunderkammern):
