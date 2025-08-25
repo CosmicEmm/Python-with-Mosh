@@ -75,7 +75,7 @@ x *= 3
 
 # Operator Precedence: the order in which arithmetic operators are applied. Follows DMAS but can be changed via parentheses.
 y = 10 + 3 * 2
-print(y) # returns 16
+print(y) # prints 16
 
 z = (10 + 3) * 2
-print(z) # returns 26
+print(z) # prints 26
