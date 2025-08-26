@@ -79,3 +79,57 @@ print(y) # prints 16
 
 z = (10 + 3) * 2
 print(z) # prints 26
+
+# Comparison Operators: used to compare values
+x = 3 > 2   # a boolean expression produces a boolean value (True/False)
+print(x)
+
+x = 3 >= 2  # greater than or equal to
+x = 3 < 2   # lesser than
+x = 3 <= 2  # lesser than or equal to
+x = 3 == 2  # equality operator; not to be confused with assignment operator (=)
+x = 3 != 2  # not equality operator
+
+# Logical Operators: used to build complex rules and conditions
+# and Operator: when both boolean expressions are True, the overall result will be True
+price = 25
+print(price > 10 and price < 30) # True
+print(10 < price < 30)  # alternate simplified version
+
+# or operator: atleast one of the boolean expressions must be True for the overall result to be True
+price = 5
+print(price > 10 or price < 30) # True because 5 < 30
+
+# not operator: inverses any values you give it
+price = 5
+print(not price > 10) # True because the not operator inverses the False from price > 10
+
+# If Statements: used to make decisions in our programs
+temperature = 25
+
+if temperature > 30:
+    print("It's a hot day")
+    print("Drink plenty of water")
+
+# Adding more conditions
+if temperature > 30:
+    print("It's a hot day")
+    print("Drink plenty of water")
+elif temperature > 20:
+    print("It's a nice day")
+elif temperature > 10:
+    print("It's a bit cold")
+else:  # this will be executed if none of the above condition are True
+    print("It's cold")
+
+# ---------- EXERCISE ---------------------------------------------
+weight = float(input('Weight: '))
+unit = input('(K)g or (L)bs: ')
+
+if unit.upper() == 'K':
+    print('Weight in (L)bs: ' + str(weight * 2.2))
+elif unit.upper() == 'L':
+    print('Weight in (K)g: ' + str(weight / 2.2))
+else:
+    print('Wrong unit of measure. Try again!')
+# -----------------------------------------------------------------
