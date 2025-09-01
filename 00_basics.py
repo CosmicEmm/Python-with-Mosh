@@ -133,3 +133,33 @@ elif unit.upper() == 'L':
 else:
     print('Wrong unit of measure. Try again!')
 # -----------------------------------------------------------------
+
+# While Loop: executes a block of code repeatedly as long as a condition is True
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+
+a = 1
+while a <= 10:
+    print(a * '*') # multiplying a number by a string repeats the string based on the value of the number
+    a += 1
+
+# Data Types in Python
+"""
+Basic/Primitive Types:
+- String
+- Number (Integer & Float)
+- Boolean
+
+Complex Types: useful in building real applications
+- List
+- Tuple
+- Set
+- Dictionary
+"""
+
+# List: used to represent a list of objects separated by commas
+names = ["John", "Bob", "Mosh", "Sam", "Mary"]
+print(names)
+
