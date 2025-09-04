@@ -163,3 +163,94 @@ Complex Types: useful in building real applications
 names = ["John", "Bob", "Mosh", "Sam", "Mary"]
 print(names)
 
+# Retrieving individual objects from the list
+print(names[0])   # [index of the object we want to retrieve]
+# Retrieving a range of values from the list
+print(names[0 : 3]) # [starting index : ending index should be +1 to the object we want to retrieve]
+
+# In Python we can also use negative indexes, a feature not seen in other programming languages
+print(names[-1]) # -1 represents the last object in the list
+
+# Changing an object in the list at a particular index for e.g. change the spelling of "John" to "Jon"
+names[0] = "Jon"
+print(names)
+
+# List Methods: Objects in programming are similar to real-life objects — they have specific capabilities. In Python, lists come with built-in methods as well.
+numbers = [1, 2, 3, 4, 5]
+# Append Method: adds a new object at the end of the list
+numbers.append(6)
+# Insert Method: inserts an object somewhere in the middle or at the beginning
+numbers.insert(0, -2)  # insert(index of insert positon, object)
+print(numbers)
+# Remove Method: removes an object from the list
+numbers.remove(3)
+print(numbers)
+# Clear Method: clears all values in the list
+numbers.clear()
+print(numbers)
+
+# in Operator: checks whether certain objects occur within a list and returns a boolean
+digits = [1, 2, 3, 4, 5]
+print(1 in digits) # returns True
+print(7 in digits) # returns False
+
+# In-built len function: returns the number of items in a list
+print(len(digits))
+
+# For Loop: used to iterate over an iterable (like a list, tuple, or string), accessing each item one at a time
+# Print each item within a list on a separate line
+alphabets = ['a', 'b', 'c', 'd', 'e']
+
+for alphabet in alphabets: # alphabet is the loop variable. In each iteration, it'll hold one value, starting from a, then b and so on.
+    print(alphabet)
+
+numerals = [1, 2, 3, 4, 5]
+
+for numeral in numerals:
+    print(numeral)
+
+# We can achieve the same with a while loop but it's much more complex than the for loop
+i = 0
+
+while i < len(numerals): # while i < 5
+    print(numerals[i])   # here i is the index of the numeral we want to print. In first iteration, it will be numerals[0], then numerals[1] and so on.
+    i = i + 1
+
+# In-built range function: returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
+values = range(5) # will return a range object
+print(values)     # Terminal: range(0, 5)
+
+# range(0, 5) is the default representation of a range object and represents numbers 0 till 4.
+# In order to see the actual numbers, we need to iterate over this range object using a for loop just like we iterate over a list.
+for value in values:
+    print(values)
+
+# We can also define the starting point ourselves instead of the default value of 0.
+numbers = range(5, 10) # where: 5 is the starting number and 10 is the ending number which is to be excluded
+
+for number in numbers:
+    print(number) # prints numbers from 5 till 9
+
+# We can also define the incremental value ourselves instead of the default value of 1.
+numbers = range(5, 10, 2) # where: 5 is the starting number, 10 is the ending number which is to be excluded, and 2 is the incremental value
+for number in numbers:
+    print(number) # prints 5, 7, 9
+
+# You don't need to store the range function in a separate variable. You can use it directly as part of a for loop.
+for number in range(5):
+    print(number)
+
+# Tuple: similar to a list, it is used to store a sequence of objects. Defined by () and immutable i.e. cannot be changed after creation
+numbers = (1, 2, 3)
+numbers[1] = 4  # TypeError: 'tuple' object does not support item assignment
+
+# Tuple Methods:
+# Count Method: returns the number of occurences of an element within a tuple
+numbers = (1, 2, 3, 3)
+numbers.count(3)  # Terminal: 2
+# Index Method: returns the index of the first occurence of a given element
+winners = ("Harry", "Ron", "Hermoine", "Luna", "Harry")
+print(winners.index("Luna"))  # Terminal: 3
+print(winners.index("Harry")) # Terminal: 0
+
+# Magic Methods: they start with an underscore
